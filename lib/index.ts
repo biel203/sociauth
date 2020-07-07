@@ -1,3 +1,4 @@
-export const message = () => {
-  console.log("Hello World");
-};
+import FacbookProvider from "./facebook";
+export * from "./facebook/interfaces";
+
+export { FacbookProvider };

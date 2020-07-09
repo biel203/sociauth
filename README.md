@@ -1,8 +1,5 @@
 # Sociauth
 
-`#f03c15`### Atenção `#f03c15`
-`#f03c15`Essa biblioteca ainda está em fase de teste `#f03c15`
-
 O Sociauth foi criado para minimizar a complexidade dos middlewares de autenticação no [express](http://expressjs.com/) para [Node.js](https://nodejs.org/en/).
 
 O principal objetivo é fazer qualquer fluxo de autenticação ter a mesma resposta, para que as informações retornadas sejam trabalhadas da forma como o desenvolvedor preferir, seja comunicação via JWT, Sessão, ou qualquer outra.
@@ -45,3 +42,16 @@ router.get("/auth/google/", googleProvider.responseRoute);
 ```
 
 Não será necessário implementação dos botoẽs da rede social no Frontend, basta apontar para a primeira rota, `router.get("/google/", googleProvider.route);` que o usuário será redirecionado para a tela de login da rede social escolhida.
+
+
+## Strategy List
+
+| Strategy        | Protocol | 
+| ------------- |:-------------:|
+| Facebook     | OAuth2 |
+| Google      | OAuth2|
+
+
+# Warning
+### Essa lib está em fase de desenvolvimento!
+### Apenas as requisições Web foram testadas

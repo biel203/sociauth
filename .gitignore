@@ -1,5 +1,4 @@
 node_modules
 .vscode
-dist
 bin
 package-lock.json

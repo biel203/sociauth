@@ -24,9 +24,8 @@ Instanciar o provider com as informações básicas para a requisição, colocan
 
 ```
 const googleProvider = new GoogleProvider({
-  clientId:
-    "107554673928-l2rtor0aqphirtikkcoicu2djfu5i4t5.apps.googleusercontent.com",
-  clientSecret: "pqN9aJwPUA4F-O44STHxDcH8",
+  clientId:"<CLIENT_ID>",
+  clientSecret: "<CLIENT_SECRET>",
   redirectUri: "http://localhost:3333/auth/google/",
   responseType: "code",
   doneCallback: <CALLBACL_FUNCTION>,

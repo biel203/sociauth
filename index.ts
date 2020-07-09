@@ -1,7 +1,6 @@
 import express, { Request, Response } from "express";
 // import FacebookProvider from "./lib/facebook/";
-import GoogleProvider from "./lib/google/";
-import { GoogleUser } from "./lib/google/interfaces";
+import { GoogleUser, GoogleProvider } from "./lib/";
 
 const app = express();
 

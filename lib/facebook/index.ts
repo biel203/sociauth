@@ -118,7 +118,7 @@ export default class FacebookProvider {
     );
   }
 
-  public async responseRoute(request: Request, _response: Response) {
+  public async responseRoute(request: Request, response: Response) {
     const {
       query: { state, error, error_code },
     } = request;
@@ -131,6 +131,6 @@ export default class FacebookProvider {
       throw new Error(`Access denied from facebook. error: ${error}`);
     }
     const user = await this.buildUser(request);
-    this.params.doneCallback(user);
+    this.params.doneCallback(user, request, response);
   }
 }
